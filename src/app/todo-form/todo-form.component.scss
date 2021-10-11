@@ -1,0 +1,16 @@
+.todo-form {
+  background-color: #ccc;
+  padding: 1rem;
+  min-width: 300px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  .todo-input {
+    width: 100%;
+    font-size: 24px;
+  }
+  .btn {
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,9 @@
+  <div class="todo-form">
+    <input  [(ngModel)]="todoInput" class="todo-input" type="text">
+    <button *ngIf="!edit" type="submit" class="btn todo-add-btn" (click)="addTodoEmitter()">Add</button>
+    <ng-container *ngIf="edit">
+      <button type="submit" class="btn todo-add-btn" (click)="cancelUpdateEmitter()">cancel</button>
+      <button type="submit" class="btn todo-add-btn" (click)="updateTodoEmitter()">Update</button>
+    </ng-container>
+
+  </div>
